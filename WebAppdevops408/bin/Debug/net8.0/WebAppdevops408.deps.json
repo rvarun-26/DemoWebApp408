@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "WebAppdevops408/1.0.0": {
+        "runtime": {
+          "WebAppdevops408.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WebAppdevops408/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
