@@ -1,16 +1,54 @@
-﻿g@{
+﻿@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
-@{
-    ViewData["Title"] = "Home Page";
-}
+<!-- Page background styling -->
+<style>
+    body {
+        background-color: #f0f8ff; /* light blue background */
+        font-family: Arial, sans-serif;
+    }
+    .text-center {
+        margin-top: 50px;
+    }
+    .info-section {
+        margin-top: 40px;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    h2 {
+        color: darkred;
+    }
+    p {
+        color: #333333;
+        font-size: 16px;
+    }
+</style>
 
 <div class="text-center">
     <h1 class="display-4" style="color: darkblue;">Welcome to my page</h1>
     <p style="color: darkgreen; font-size: 18px;">This is Varun.</p>
+</div>
+
+<div class="info-section">
+    <h2>About Me</h2>
+    <p>Hello! I am Varun, learning ASP.NET Core and building modern web applications.</p>
+</div>
+
+<div class="info-section">
+    <h2>My Interests</h2>
+    <ul>
+        <li>Web Development with ASP.NET Core</li>
+        <li>Cloud Deployment on Azure</li>
+        <li>Exploring DevOps pipelines</li>
+    </ul>
+</div>
+
+<div class="info-section">
+    <h2>Resources</h2>
+    <p>Learn more about ASP.NET Core from 
+       <a href="https://learn.microsoft.com/aspnet/core" target="_blank">Microsoft Docs</a>.
+    </p>
 </div>
