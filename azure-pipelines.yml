@@ -22,8 +22,11 @@ stages:
         packageType: 'sdk'
         version: '8.x'
     - script: dotnet restore
+      displayName: "Restore"
     - script: dotnet build --configuration $(BuildConfiguration) --no-restore
+      displayName: "Build"
     - script: dotnet publish --configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)/publish
+      displayName: "Publish"
     - task: ArchiveFiles@2
       inputs:
         rootFolderOrFile: '$(Build.ArtifactStagingDirectory)/publish'
