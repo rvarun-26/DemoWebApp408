@@ -44,6 +44,8 @@ stages:
   condition: succeeded()
   jobs:
   - deployment: DeployWeb
+    displayName: "Deploy Web App"
+    environment: "dev"   # <-- REQUIRED
     pool:
       vmImage: 'windows-latest'
     strategy:
